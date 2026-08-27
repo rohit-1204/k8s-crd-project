@@ -1,0 +1,11 @@
+apiVersion: platform.example.com/v1
+kind: MySQLDatabase
+
+metadata:
+  name: ecommerce-db
+  namespace: default
+
+spec:
+  version: "8.4"
+  replicas: 3
+  storage: 100Gi

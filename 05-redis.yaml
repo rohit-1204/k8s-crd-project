@@ -1,0 +1,11 @@
+apiVersion: platform.example.com/v1
+kind: RedisCluster
+
+metadata:
+  name: ecommerce-redis
+  namespace: default
+
+spec:
+  image: redis:7-alpine
+  replicas: 3
+  storage: 10Gi
